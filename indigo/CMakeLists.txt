@@ -14,9 +14,7 @@ find_package(catkin REQUIRED COMPONENTS
 #set (CATKIN_PIP_NO_DEPS False FORCE)
 
 # defining current package as a package that should be managed by pip (not catkin - even though we make it usable with workspaces)
-catkin_pip_target(rostful)
-
-catkin_package()
+catkin_pip_package(rostful)
 
 install(DIRECTORY scripts/
         DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
