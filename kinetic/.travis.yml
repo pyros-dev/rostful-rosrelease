@@ -5,7 +5,14 @@ services:
 
 branches:
   except:
-    - gh-pages
+    # not testing package building here (ROS buildfarm will do it)
+    - /^rpm/kinetic/.*$/
+    - /^debian/kinetic/.*$/
+
+  only:
+    # We can test release or upstream after patches have been applied
+    - /^release/.*$/
+    - upstream
 
 env:
   global:
