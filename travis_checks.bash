@@ -38,6 +38,3 @@ if [ ! -z ${ROS_FLOW+undef} ]; then
         rospack profile
     fi
 fi
-
-# In ALL Cases
-python -m nose rostful.tests -s
