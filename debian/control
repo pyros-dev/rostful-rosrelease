@@ -1,0 +1,12 @@
+Source: ros-kinetic-rostful
+Section: misc
+Priority: extra
+Maintainer: AlexV <asmodehn@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), python-catkin-pkg, python-flask (>= 0.10.1), python-flask-restful (>= 0.3.4), python-simplejson, python-tornado (>= 4.2.1), python-yaml, ros-kinetic-catkin, ros-kinetic-catkin-pip (>= 0.2.3), ros-kinetic-click (>= 6.2.0), ros-kinetic-flask-cors (>= 3.0.2), ros-kinetic-flask-reverse-proxy (>= 0.2.0), ros-kinetic-pyros (>= 0.4.3), ros-kinetic-pyros-interfaces-ros (>= 0.4.2), ros-kinetic-roslint, ros-kinetic-rospy, ros-kinetic-rostest, ros-kinetic-rosunit, ros-kinetic-tblib (>= 1.2.0), ros-kinetic-webargs (>= 1.3.4)
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-rostful
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-flask (>= 0.10.1), python-flask-restful (>= 0.3.4), python-simplejson, python-tornado (>= 4.2.1), python-yaml, ros-kinetic-click (>= 6.2.0), ros-kinetic-flask-cors (>= 3.0.2), ros-kinetic-flask-reverse-proxy (>= 0.2.0), ros-kinetic-pyros (>= 0.4.3), ros-kinetic-pyros-interfaces-ros (>= 0.4.2), ros-kinetic-rospy, ros-kinetic-tblib (>= 1.2.0), ros-kinetic-webargs (>= 1.3.4)
+Description: REST API for ROS
